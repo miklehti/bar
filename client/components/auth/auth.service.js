@@ -61,8 +61,9 @@ angular.module('baariApp')
 
         return User.save(user,
           function(data) {
-            $cookieStore.put('token', data.token);
-            currentUser = User.get();
+            //poistettu tämä, eli tämä saisi aikaan käyttäjän vaihdoksen.
+           // $cookieStore.put('token', data.token);
+           // currentUser = User.get();
             return cb(user);
           },
           function(err) {

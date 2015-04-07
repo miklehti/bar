@@ -5,6 +5,36 @@ angular.module('baariApp')
     $scope.menu = [{
       'title': 'Home',
       'link': '/'
+    },{
+      'title': 'Olut',
+      'link': '/'
+    },
+    {
+      'title': 'Menu',
+      'link': '/'
+    },
+    {
+      'title': 'Tapahtumat',
+      'link': '/'
+    },
+    {
+      'title': 'Blog',
+      'link': '/'
+    }
+     ];
+
+     $scope.admin = [{
+      'title': 'Hallinnoi käyttäjiä',
+      'link': '/admin'
+    },{
+      'title': 'Lisää käyttäjä',
+      'link': '/signup'
+    }
+     ];
+
+     $scope.loggedIn = [{
+      'title': 'Lisää tapahtuma',
+      'link': '/event'
     }
      ];
 

@@ -77,7 +77,7 @@ Kansiorakenne ja mitä mikäkin tekee:
 
 
 	- selvitä miten palvelin toimii.
-	- selvitä mistä palvelin tietää että ollaan kirjauduttu?
+	- selvitä mistä palvelin tietää että ollaan kirjauduttu? hasAuthenticated ja Is admin serverin puolella	
 	- tuo tietoa esiin näytölle esim. thingien . => done	
 	- miten lisään less tms. tähän projektiin jos haluan
 	- mikä on mongoose => ORM Mongolle, helppo.
@@ -85,6 +85,22 @@ Kansiorakenne ja mitä mikäkin tekee:
 	- mikä on socket.io? => joku .js kirjasto, voi lähettää tietoa vaikka positiosta livenä. tms. Vielä pitää katsoa lisää-
 	- tee oma schema (usersin ja things lisäksi)
 	- http://www.docmagilligans.com/blog/ => kiva sivu!xg65w
+
+	Eli todo:
+
+	mitä tarvitaan unelmapubiin?
+	- lounas
+	- main offer
+	- 4 x offers (olut, ruoka, )
+	- footer (sitemap, social media)
+	- responsiivisuus => tulee varman .css
+	- miten lisätään less tai sass?
+	- blog
+	- miten saikaan että ei voi rekisteröidä ellei ole admin?
+	- facebook pois
+	- rekisteröityminen ei saisi heittää siksi käyttäjäksi, vaan vain tiedot kantaan OK
+	- ota github käyttöön taskeissa.
+	- tee admin/käyttäjähallinta kuntoon, tee Karma ja Protractor testit. Vie tuotantoon ja avaa putki! Ota Jenkins käyttöön.
 
 
 

@@ -14,10 +14,10 @@ angular.module('baariApp')
           email: $scope.user.email,
           password: $scope.user.password
         })
-        .then( function() {
-          // Account created, redirect to home
-          $location.path('/');
-        })
+        // .then( function() {
+        //   // Account created, redirect to home
+        //   $location.path('/');
+        // })
         .catch( function(err) {
           err = err.data;
           $scope.errors = {};
@@ -31,7 +31,5 @@ angular.module('baariApp')
       }
     };
 
-    $scope.loginOauth = function(provider) {
-      $window.location.href = '/auth/' + provider;
-    };
+   
   });
