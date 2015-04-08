@@ -96,6 +96,8 @@ Kansiorakenne ja mitä mikäkin tekee:
 	- responsiivisuus => tulee varman .css
 	- miten lisätään less tai sass?
 	- blog
+
+	-Muuta:
 	- miten saikaan että ei voi rekisteröidä ellei ole admin?
 	- facebook pois
 	- rekisteröityminen ei saisi heittää siksi käyttäjäksi, vaan vain tiedot kantaan OK
