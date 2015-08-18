@@ -6,36 +6,25 @@ angular.module('baariApp')
       'title': 'Home',
       'link': '/'
     },{
-      'title': 'Olut',
-      'link': '/'
+      'title': 'Idea?',
+      'link': '/event'
     },
     {
-      'title': 'Menu',
-      'link': '/'
-    },
-    {
-      'title': 'Tapahtumat',
-      'link': '/'
-    },
-    {
-      'title': 'Blog',
-      'link': '/'
+      'title': 'Backlog',
+      'link': '/backlog'
     }
      ];
 
      $scope.admin = [{
-      'title': 'Hallinnoi käyttäjiä',
+      'title': 'Administration',
       'link': '/admin'
     },{
-      'title': 'Lisää käyttäjä',
+      'title': 'Add Users',
       'link': '/signup'
     }
      ];
 
-     $scope.loggedIn = [{
-      'title': 'Lisää tapahtuma',
-      'link': '/event'
-    }
+     $scope.loggedIn = [
      ];
 
     $scope.isCollapsed = true;

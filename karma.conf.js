@@ -25,6 +25,8 @@ module.exports = function(config) {
       'client/app/app.coffee',
       'client/app/**/*.js',
       'client/app/**/*.coffee',
+      'client/app/account/**/*.js',
+      'client/app/account/**/*.html',
       'client/components/**/*.js',
       'client/components/**/*.coffee',
       'client/app/**/*.jade',

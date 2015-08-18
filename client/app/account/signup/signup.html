@@ -1,21 +1,21 @@
-<div ng-include="'components/navbar/navbar.html'"></div>
+
 
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <h1>Lisää käyttäjä</h1>
+      <h1>Add a User</h1>
     </div>
     <div class="col-sm-12">
       <form class="form" name="form" ng-submit="register(form)" novalidate>
 
         <div class="form-group" ng-class="{ 'has-success': form.name.$valid && submitted,
                                             'has-error': form.name.$invalid && submitted }">
-          <label>Nimi</label>
+          <label>Name</label>
 
           <input type="text" name="name" class="form-control" ng-model="user.name"
                  required/>
           <p class="help-block" ng-show="form.name.$error.required && submitted">
-            Nimi on pakollinen tieto!
+            User has to have a name!
           </p>
         </div>
 
@@ -27,10 +27,10 @@
                  required
                  mongoose-error/>
           <p class="help-block" ng-show="form.email.$error.email && submitted">
-            Ei vaikuta oikealta email osoittellta...
+           Does not seem lika proper email...
           </p>
           <p class="help-block" ng-show="form.email.$error.required && submitted">
-            Mikä on sinun email osoite?
+            What is your email address?
           </p>
           <p class="help-block" ng-show="form.email.$error.mongoose">
             {{ errors.email }}
@@ -39,7 +39,7 @@
 
         <div class="form-group" ng-class="{ 'has-success': form.password.$valid && submitted,
                                             'has-error': form.password.$invalid && submitted }">
-          <label>Salasana</label>
+          <label>Password</label>
 
           <input type="password" name="password" class="form-control" ng-model="user.password"
                  ng-minlength="3"
@@ -47,7 +47,7 @@
                  mongoose-error/>
           <p class="help-block"
              ng-show="(form.password.$error.minlength || form.password.$error.required) && submitted">
-           Salasanan pitää olla vähintään 3 merkkiä.
+           Password has to be at least 3 characters long...
           </p>
           <p class="help-block" ng-show="form.password.$error.mongoose">
             {{ errors.password }}
@@ -56,7 +56,7 @@
 
         <div>
           <button class="btn btn-inverse btn-lg btn-login" type="submit">
-            Lisää käyttäjä
+            Add User
           </button>
           
         </div>

@@ -34,7 +34,12 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
+    <div ng-include="'components/navbar/navbar.html'"></div>
     <div ui-view=""></div>
+    <footer class="footer">
+  <div class="container">
+      <p>Backlog lista</p>
+  </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
@@ -61,6 +66,8 @@
       <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
       <script src="bower_components/lodash/dist/lodash.compat.js"></script>
       <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+      <script src="bower_components/angular-validation-match/dist/angular-input-match.min.js"></script>
+      <script src="bower_components/angular-route/angular-route.js"></script>
       <!-- endbower -->
     <!-- endbuild -->
 
@@ -75,6 +82,7 @@
           <script src="app/admin/admin.js"></script>
           <script src="app/event/event.controller.js"></script>
           <script src="app/event/event.js"></script>
+          <script src="app/event/singleEventCtrl.js"></script>
           <script src="app/main/main.controller.js"></script>
           <script src="app/main/main.js"></script>
           <script src="components/auth/auth.service.js"></script>

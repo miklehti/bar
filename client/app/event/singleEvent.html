@@ -1,0 +1,91 @@
+
+
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <h1>Details of {{single.testName}}</h1>
+    <p class="lead">The test is in {{single.status}} state</p>
+  </div>
+</header>
+
+
+
+<div class="container">
+  <h1 class="page-header">Details:</h1>
+  <form role="form">
+  <div class="form-group">
+      <label>Status:</label> 
+      <label ng-hide="isLoggedIn()">{{single.status}}</label> 
+      <select ng-show="isLoggedIn()" ng-model="single.status">
+  <option>Suggestion</option>
+  <option>Approved</option>
+  <option>Running</option>
+  <option>Analyzing</option>
+  <option>Done</option>
+</select>
+    </div>
+
+   <div class="form-group">
+      <label>Requestors email:</label> 
+      <label ng-hide="isLoggedIn()">{{single.emaili}}</label> 
+      <input ng-show="isLoggedIn()" type="email" class="form-control" name="email" ng-model="single.emaili" required>
+    </div>
+    <div class="form-group">
+      <label>Name of the Test* :</label>
+      <label ng-hide="isLoggedIn()">{{single.testName}}</label> 
+      <input ng-show="isLoggedIn()" type="text" class="form-control" name="testName" ng-model="single.testName" required>
+    </div>
+    <div class="form-group">
+      <label>Site* :</label>
+     <label ng-hide="isLoggedIn()">{{single.site}}</label> 
+      <input ng-show="isLoggedIn()" type="text" class="form-control" name="site" ng-model="single.site" required>
+    </div>
+    <div class="form-group">
+      <label>Target URL(s)* :</label> 
+       <label ng-hide="isLoggedIn()">{{single.URLi}}</label> 
+      <input ng-show="isLoggedIn()" type="text" class="form-control" name="URLi" ng-model="single.URLi" required>
+    </div>
+    <div class="form-group">
+      <label>Hypothesis:</label>
+      <label ng-hide="isLoggedIn()">{{single.hypothesis}}</label> 
+      <input ng-show="isLoggedIn()" type="text" class="form-control" name="hypothesis" ng-model="single.hypothesis" required>
+    </div>
+    <div class="form-group">
+      <label>KPIs for analysis & results:</label>
+      <label ng-hide="isLoggedIn()">{{single.KPIs}}</label> 
+      <input ng-show="isLoggedIn()" type="text" class="form-control" name="KPIs" ng-model="single.KPIs" required>
+    </div>
+    <div class="form-group">
+      <label>Description:</label>
+      <label ng-hide="isLoggedIn()">{{single.descriptioni}}</label> 
+      <input ng-show="isLoggedIn()" type="text" class="form-control" name="descriptioni" ng-model="single.descriptioni" required>
+    </div>
+     <div class="radiobutton">
+      <label>Audience for the test:</label>
+      <label ng-hide="isLoggedIn()">{{single.audience}}</label> 
+      <input ng-show="isLoggedIn()" type="radio" ng-model="single.audience" value="All" > <label ng-show="isLoggedIn()">All visitors</label>
+      <input ng-show="isLoggedIn()" type="radio"  ng-model="single.audience" value="Mobile" > <label ng-show="isLoggedIn()">Mobile only</label>
+      <input ng-show="isLoggedIn()" type="radio" ng-model="single.audience" value="Browser"> <label ng-show="isLoggedIn()">Browsers only</label>
+    </div>
+    <div class="form-group">
+      <label>Image of Control (A)</label>
+    </div>
+    <div class="form-group">
+      <label>Image of Variant (B)</label>
+    </div>
+   
+    <div class="form-group">
+      <label>Link to details in Sharepoint</label>
+      <input type="text" class="form-control" ng-model="sharepoint">
+    </div>
+    <div class="form-group">
+      <label>Key findings and recommmendations</label>
+      <input type="text" class="form-control" ng-model="imageB">
+    </div>
+    <br>
+      <button ng-show="isLoggedIn()" ng-click="saveEvent()" class="btn btn-inverse">Save</button>
+      <button ng-show="isAdmin()" ng-click="deleteEvent()" class="btn btn-inverse">Delete</button>
+  </form>
+  <button  ng-click="cancelEvent()" class="btn btn-inverse">Back</button>
+</div>
+
+
